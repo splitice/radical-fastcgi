@@ -1,5 +1,5 @@
 <?php
-namespace Net;
+namespace Radical\Net;
 
 class FCGIBadRequest extends \Exception {
 	function __construct() {

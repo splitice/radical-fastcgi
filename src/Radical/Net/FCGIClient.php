@@ -1,5 +1,5 @@
 <?php
-namespace Net;
+namespace  Radical\Net;
 
 class FCGIClient {
 	const VERSION_1 = 1;
@@ -274,8 +274,9 @@ class FCGIClient {
 			}
 				
 			$resp = $this->decodePacketHeader ( $packet );
-				
-			if ($len = $resp ['contentLength'] + $resp ['paddingLength']) {
+			
+			$len = $resp ['contentLength'] + $resp ['paddingLength'];
+			if ($len) {
 				$resp ['content'] = substr ( self::fread ( $socket, $len ), 0, $resp ['contentLength'] );
 			} else {
 				$resp ['content'] = '';
