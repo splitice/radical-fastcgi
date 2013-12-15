@@ -1,0 +1,16 @@
+{
+	"keywords" : [
+		"radical-fastcgi"
+	],
+	"autoload" : {
+		"psr-0" : {
+			"Radical" : "src"
+		}
+	},
+	"name" : "splitice/radical-fastcgi",
+	"type" : "library",
+	"description" : "radical-fastcgi",
+	"require" : {
+		"php" : ">=5.4"
+	}
+}
