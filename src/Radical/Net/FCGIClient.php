@@ -13,8 +13,8 @@ class FCGIClient {
 	const DATA = 8;
 	const GET_VALUES = 9;
 	const GET_VALUES_RESULT = 10;
-	const UNKNOWN_TYPE = 11;
-	const MAXTYPE = self::UNKNOWN_TYPE;
+	const mixed = 11;
+	const MAXTYPE = self::mixed;
 	const RESPONDER = 1;
 	const AUTHORIZER = 2;
 	const FILTER = 3;
